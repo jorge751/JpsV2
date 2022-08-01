@@ -1,0 +1,3 @@
+A través de nuestra plataforma de software como servicio podrá adquirir licencias
+de uso por cada usuario que su organzación necesite.
+Los sistemas disponibles son 'Contabilidad central' y 'Seguimiento de personal'.

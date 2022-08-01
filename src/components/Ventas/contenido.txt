@@ -1,0 +1,1 @@
+Sistema de ventas para escritorio con preventistas (vendedores), clientes, productos y repartidores.

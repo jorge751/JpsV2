@@ -1,0 +1,3 @@
+Módulo de escritorio que permite mantener clientes. Ala, baja y modificación de
+sus datos. Además, según se complemente con ctas. ctes., se puede asociar cada
+uno con movimientos de cuentas deudoras.

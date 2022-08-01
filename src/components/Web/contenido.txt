@@ -1,0 +1,1 @@
+Sistema desarrollado en javascript con Reatime de Firebase, permite manejar mesas, mozos, consumo, reservas y acumular recaudaciones con cierres de mesas.
