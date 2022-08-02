@@ -5,6 +5,12 @@ import fileContenido from './contenido.txt';
 import BotonComprar from '../BotonComprar';
 import Tarjeta from '../TarjetaItem';
 
+//	Descarga JSON de la tarjeta
+async function doFetch(numTarjeta) {
+	return await fetch(`/ventas/tarjeta${numTarjeta}/datos.json`,
+		{mode: 'no-cors'})
+}
+
 function Compo() {
 
 	//	Crea contenido de texto
@@ -19,9 +25,8 @@ function Compo() {
 	const [tarjetas, setTarjetas] = useState([]);
 	useEffect(() => {
 		const loadTarjetas = []
-		let objJSON;
 		for (let i=1; i<=cfg.cantTarjetas; i++) {
-			fetch(`/ventas/tarjeta${i}/datos.json`, {mode: 'no-cors'})
+			doFetch(i)
 				.then(respuesta => respuesta.json())
 				.then(objJSON => {
 					objJSON['key'] = i;
