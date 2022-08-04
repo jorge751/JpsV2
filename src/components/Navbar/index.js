@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Compo() {
+function NavBar() {
 	return (
 		<Navbar bg="warning" expand="lg">
 			<Container fluid>
@@ -67,4 +67,4 @@ function Compo() {
 	);
 }
 
-export default Compo;
+export default NavBar;
