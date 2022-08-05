@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-function Compo() {
+function About() {
 return (
 	<>
 		<main>
@@ -15,4 +15,4 @@ return (
 	);
 }
 
-export default Compo;
+export default About;

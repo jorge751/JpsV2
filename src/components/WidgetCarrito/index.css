@@ -1,0 +1,14 @@
+
+.div-widget {
+	display: inline;
+	position: relative;
+}
+
+.span-insignia {
+	position: absolute !important;
+	top: 1.3em !important;
+}
+
+.contador-menor10 { left: 2em; }
+
+.contador-mayor9 { left: 1.7em; }

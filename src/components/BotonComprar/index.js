@@ -1,10 +1,17 @@
 
-import { Children } from 'react';
+//
+//	Botón-comprar renderizado en cata proyecto
+//
+
+//	Botón bootstrap
 import Button from 'react-bootstrap/Button';
+
+//	Contador-de-compra del widget de carrito
 import { useContCompraContext } from "../ContadorCompra";
 
-function Compo(props) {
+function BotonComprar(props) {
 
+	//	Acción de suma del contador de compra
 	const { sumar } = useContCompraContext();
 
 	return (
@@ -14,4 +21,4 @@ function Compo(props) {
 	);
 }
 
-export default Compo;
+export default BotonComprar;

@@ -1,4 +1,8 @@
 
+//
+//	Componentes-páginas de cada proyecto del portfolio
+//
+
 import ClientesPage from './Clientes';
 import ColegioPage from './Colegio';
 import FacturacionPage from './Facturacion';

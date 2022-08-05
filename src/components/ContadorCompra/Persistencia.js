@@ -5,7 +5,7 @@
 
 import { useState } from 'react';
 
-function Compo(valorParam) {
+function Persistencia(valorParam) {
 
     //  Crea clave de local storage
     const clave = 'contador_compra';
@@ -26,4 +26,4 @@ function Compo(valorParam) {
     return [contador, set];
 }
 
-export default Compo;
+export default Persistencia;

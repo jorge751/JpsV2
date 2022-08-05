@@ -1,3 +1,3 @@
 Sistema de facturación prestacional en escritorio. Maneja pacientes o asistentes,
 efectores, nomenclador de prácticas, prestaciones, obras sociales, proformas y
-documentos de facturación.
+comprobantes de facturación.

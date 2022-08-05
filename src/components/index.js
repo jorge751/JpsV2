@@ -1,3 +1,6 @@
+//
+//	Componentes generales
+//
 
 import BotonComprar from './BotonComprar';
 import ContadorCompra from './ContadorCompra';
@@ -8,11 +11,14 @@ import ItemListContainer from './ItemListContainer';
 import Navbar from './Navbar';
 import WidgetCarrito from './WidgetCarrito';
 
+import Proyecto from './Proyecto';
+
 import About from './About';
 import Home from './Home';
 
 export {
 	BotonComprar, ContadorCompra, Footer, Item, ItemList, ItemListContainer,
 		Navbar, WidgetCarrito,
+	Proyecto,
 	About, Home
 };

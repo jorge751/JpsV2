@@ -14,10 +14,13 @@ const ContCompraContext = React.createContext(0);
 //  Crea función de acceso a contexto
 export const useContCompraContext = () => useContext(ContCompraContext);
 
-function Compo({children}) {
+function ContadorCompra({children}) {
 
     //  Crea contador y su setter persistidor
     const [contador, setContador] = Persistencia(0);
+
+    //  Crea acción reset
+    const reset = () => setContador(0);
 
     //  Crea acción suma
     const sumar = () => setContador(contador + 1);
@@ -32,6 +35,7 @@ function Compo({children}) {
         <ContCompraContext.Provider 
             value={{
 				contador,
+                reset,
                 sumar,
                 restar
             }}
@@ -41,4 +45,4 @@ function Compo({children}) {
     );
 };
 
-export default Compo;
+export default ContadorCompra;

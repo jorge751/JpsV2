@@ -1,38 +1,29 @@
 
 import Imagen from '../../../src/cart-fill.svg';
+import './index.css'
 
 import { useContCompraContext } from '../ContadorCompra';
 
-function Compo() {
+function WidgetCarrito() {
 
 	const { contador, restar } = useContCompraContext();
 
-	const cssDiv = {
-	    display: 'inline',
-    	position: 'relative'
-	}
-
-	const cssInsignia = {
-		position: 'absolute',
-		top: '1.3em',
-		left: (contador > 9 ? '1.7em' : '2em')
-	}
-
 	return (
 		<div
-			className = 'btn btn-warning'
-			style = {cssDiv}
+			className = 'btn btn-warning div-widget'
 			datatoggle = 'tooltip'
 			dataplacement = 'top'
 			title = 'Restar carrito'
 			onClick = { () => restar() }
 		>
-			<img src={Imagen} alt='logo' />
-			<span className='badge' style={cssInsignia}>
+			<img src={Imagen} alt='badge' />
+			<span className={'badge span-insignia ' +
+				'contador-' + (contador < 10 ? 'menor10' : 'mayor9')}
+			>
 				{contador}
 			</span>
 		</div>
 	);
 }
 
-export default Compo;
+export default WidgetCarrito;

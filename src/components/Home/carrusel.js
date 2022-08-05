@@ -1,7 +1,7 @@
 
 import Carousel from 'react-bootstrap/Carousel';
 
-function Compo() {
+function Carrusel() {
 	return (
 		<>
 		<h2 className='mx-1 my-3'>
@@ -64,4 +64,4 @@ function Compo() {
 	);
 }
 
-export default Compo;
+export default Carrusel;

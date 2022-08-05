@@ -2,16 +2,9 @@
 import React from 'react';
 import Form from './form';
 import Carrusel from './carrusel';
+import './index.css'
 
-function Compo() {
-
-	const cssParrafo = {
-		fontSize: '25px',
-		fontWeight: 'bold',
-		textAlign: 'right',
-		backgroundColor: 'white',
-		padding: '20px'
-	}
+function Home() {
 
 	return (
 		<main>
@@ -25,7 +18,7 @@ function Compo() {
 					<img src='./logoJPSwall.png'></img>
 				</div>
 				<div className='col mx-5 my-1'>
-					<p style={cssParrafo}>
+					<p className='parrafo-home'>
 						Somos una organización joven de
 						<b> desarrollo Web y Escritorio </b>
 						con mucho talento y deseamos que
@@ -36,7 +29,7 @@ function Compo() {
 
 			<div className='row'>
 				<div className='d-flex justify-content-center'>
-					<p style={{...cssParrafo, textAlign: 'center'}}>
+					<p className='parrafo-home'>
 						Apostamos a que nuestras licencias,
 						servicios y contratos aseguren productividad
 						en tu negocio.
@@ -60,4 +53,4 @@ function Compo() {
  	);
 }
 
-export default Compo;
+export default Home;

@@ -3,12 +3,12 @@
 //	Renderiza proyecto de 
 //
 
-import { ItemListContainer } from '../../components';
+import { Proyecto } from '../../components';
 
-function Compo() {
+function Clientes() {
 	return (
-		<ItemListContainer proyecto='Clientes' />
+		<Proyecto proyecto='Clientes' />
 	);
 }
 
-export default Compo;
+export default Clientes;

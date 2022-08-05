@@ -3,12 +3,12 @@
 //	Renderiza proyecto de portfolio
 //
 
-import { ItemListContainer } from '../../components';
+import { Proyecto } from '../../components';
 
-function Compo() {
+function Web() {
 	return (
-		<ItemListContainer proyecto='Web' />
+		<Proyecto proyecto='Web' />
 	);
 }
 
-export default Compo;
+export default Web;

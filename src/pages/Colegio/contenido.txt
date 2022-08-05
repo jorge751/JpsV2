@@ -1,1 +1,6 @@
-El principal problema que el Sistema pretende solucionar es el seguimiento de la relación económica entre el Colegio y el Alumno. Este paradigma está representado con un sistema de cuenta corriente donde se registran,línea por línea, como lo haríamos en una planilla de Excel, la deuda del Alumno en una y su cobro en otra, sucesivamente.
+
+El problema que el Sistema pretende solucionar es el seguimiento de la relación
+económica entre el Colegio y el Alumno. Este paradigma está representado con un
+sistema de cuenta corriente donde se registran, línea por línea,
+como lo haríamos en una planilla de Excel, la deuda del Alumno en una, su
+cobro en otra y el saldo en una tercera, sucesivamente.
