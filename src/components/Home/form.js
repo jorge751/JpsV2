@@ -1,5 +1,7 @@
 
-import React from 'react';
+//
+//	Formulario claseado con bootstrap y customizado
+//
 
 function Formulario() {
 	return (

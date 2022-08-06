@@ -1,9 +1,9 @@
 
 //	React y App
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
-//	Layout
+//	Básicos
 import { About, Home, Navbar, Footer } from './components';
 
 //	Portfolio
@@ -13,14 +13,20 @@ import { SaasPage, VentasPage, FacturacionPage, ColegioPage, ClientesPage,
 //	Router
 import { Routes, Route } from 'react-router-dom';
 
-//	Contador de widget de compra con 'Context'
-import ContCompraProvider from './components/ContadorCompra';
+//	Contador de compra tipo Context
+import { ContadorCompra } from './components';
 
 function App() {
+
+	//	Limpia contador de compra
+	useEffect(() => {
+		localStorage.removeItem('contador_compra');
+	}, [])
+
 	return (
 		<div className='App'>
-			<ContCompraProvider>
-				<header>
+			<header>
+				<ContadorCompra>
 					<Navbar />
 					<Routes>
 						<Route path='/about' element = {<About />} />
@@ -32,8 +38,8 @@ function App() {
 						<Route path='/clientes' element = {<ClientesPage />} />
 						<Route path='/web' element = {<WebPage />} />
 					</Routes>
-				</header>
-			</ContCompraProvider>
+				</ContadorCompra>
+			</header>
 			<footer>
 				<Footer />
 			</footer>

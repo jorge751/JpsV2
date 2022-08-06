@@ -1,22 +1,22 @@
 
 //
-//	Botón-comprar renderizado en cata proyecto
+//	Botón-comprar que es renderizado en cata proyecto
 //
 
 //	Botón bootstrap
 import Button from 'react-bootstrap/Button';
 
 //	Contador-de-compra del widget de carrito
-import { useContCompraContext } from "../ContadorCompra";
+import { useContCompraContext } from '../ContadorCompra';
 
-function BotonComprar(props) {
+function BotonComprar({ caption }) {
 
 	//	Acción de suma del contador de compra
 	const { sumar } = useContCompraContext();
 
 	return (
-		<Button className='mx-2' variant="primary" onClick={() => sumar()}>
-			{props.caption || 'Comprar'}
+		<Button className='mx-2' variant='primary' onClick={() => sumar()}>
+			{caption || 'Comprar'}
 		</Button>
 	);
 }

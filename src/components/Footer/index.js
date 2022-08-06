@@ -1,5 +1,11 @@
 
+//
+//	Renderiza pie claseado con bootstrap
+//
+
 import React from 'react';
+
+//	Navegación de bootstrap
 import Navbar from 'react-bootstrap/Navbar';
 
 function Footer() {

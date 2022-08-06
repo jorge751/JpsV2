@@ -1,6 +1,6 @@
 
 //
-//	Renderiza cada componente-item del array de parámetro
+//	Renderiza cada item-componente del array de parámetro
 //
 
 import './index.css';

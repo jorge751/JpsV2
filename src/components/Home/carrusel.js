@@ -1,4 +1,8 @@
 
+//
+//	Carrusel de bootstrap customizado
+//
+
 import Carousel from 'react-bootstrap/Carousel';
 
 function Carrusel() {
@@ -7,10 +11,7 @@ function Carrusel() {
 		<h2 className='mx-1 my-3'>
 			Algunos de nuestros productos
 		</h2>
-		<Carousel 
-			className='w-75 mx-auto'
-			style={{backgroundColor: 'rgba(242,118,73,0.5)'}}
-		>
+		<Carousel className='w-75 mx-auto color-fondo-carrusel'>
 			<Carousel.Item>
 				<h5 className='text-center mt-3'>
 					Administración de colegio - Escritorio

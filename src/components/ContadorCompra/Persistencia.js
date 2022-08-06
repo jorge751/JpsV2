@@ -13,7 +13,7 @@ function Persistencia(valorParam) {
     //  Crea contador y su setter
     const [contador, setContador] = useState(() => {
         const valor = localStorage.getItem(clave);
-        return valor ? Number(valor) : valorParam;
+        return (valor ? Number(valor) : valorParam);
     });
 
     //  Crea acción de persistencia

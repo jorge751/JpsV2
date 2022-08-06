@@ -1,11 +1,13 @@
 
-import React from 'react';
-import Form from './form';
-import Carrusel from './carrusel';
+//
+//	Home con carrusel y formulario de contacto
+//
+
 import './index.css'
+import Carrusel from './carrusel';
+import Form from './form';
 
 function Home() {
-
 	return (
 		<main>
 

@@ -1,17 +1,17 @@
 
-import React from 'react';
+//
+//	Acerca de la organización - Pendiente de completar
+//
 
 function About() {
-return (
-	<>
+	return (
 		<main>
-			<h2>Who are we?</h2>
+			<h2>Quienes somos ?</h2>
 			<p>
 				That feels like an existential question, don't you
 				think?
 			</p>
 		</main>
-	</>
 	);
 }
 

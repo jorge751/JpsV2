@@ -2,23 +2,28 @@
 //	Componentes generales
 //
 
-import BotonComprar from './BotonComprar';
-import ContadorCompra from './ContadorCompra';
-import Footer from './Footer';
-import Item from './Item';
-import ItemList from './ItemList';
-import ItemListContainer from './ItemListContainer';
+//	Navegación, carrito y pie
 import Navbar from './Navbar';
 import WidgetCarrito from './WidgetCarrito';
+import Footer from './Footer';
 
-import Proyecto from './Proyecto';
-
+//	Páginas básicas
 import About from './About';
 import Home from './Home';
 
+//	Renderiza proyecto del portfolio y sus items
+import Proyecto from './Proyecto';
+import BotonComprar from './BotonComprar';
+import ItemListContainer from './ItemListContainer';
+import ItemList from './ItemList';
+import Item from './Item';
+
+//	Contador de compra tipo context
+import ContadorCompra from './ContadorCompra';
+
 export {
-	BotonComprar, ContadorCompra, Footer, Item, ItemList, ItemListContainer,
-		Navbar, WidgetCarrito,
-	Proyecto,
-	About, Home
+	Navbar, WidgetCarrito, Footer,
+	About, Home,
+	Proyecto, ItemListContainer, ItemList, Item, BotonComprar,
+	ContadorCompra
 };
